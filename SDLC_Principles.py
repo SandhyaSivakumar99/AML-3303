@@ -115,4 +115,37 @@ No error handling → breaks if column names change.
 Not scalable (imagine working on multiple CSVs).
 
 No documentation → not good for collaboration.
-""
+"""
+
+#Refactored Code
+import pandas as pd
+
+def load_data(url: str) -> pd.DataFrame:
+    """Load CSV data from a given URL."""
+    return pd.read_csv(url)
+
+def average_column(df: pd.DataFrame, column: str) -> float:
+    """Return the average value of a column."""
+    if column not in df.columns:
+        raise ValueError(f"Column '{column}' not found.")
+    return df[column].mean()
+
+def max_column(df: pd.DataFrame, column: str) -> float:
+    """Return the maximum value of a column."""
+    if column not in df.columns:
+        raise ValueError(f"Column '{column}' not found.")
+    return df[column].max()
+
+def filter_species(df: pd.DataFrame, species: str) -> pd.DataFrame:
+    """Return rows where the species matches."""
+    if "species" not in df.columns:
+        raise ValueError("Column 'species' not found.")
+    return df[df["species"] == species]
+
+if __name__ == "__main__":
+    url = "https://raw.githubusercontent.com/mwaskom/seaborn-data/master/iris.csv"
+    iris = load_data(url)
+
+    print("Average sepal length:", average_column(iris, "sepal_length"))
+    print("Max petal width:", max_column(iris, "petal_width"))
+    print("First 5 rows of setosa:\n", filter_species(iris, "setosa").head())
