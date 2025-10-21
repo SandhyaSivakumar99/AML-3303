@@ -1,0 +1,22 @@
+artifact_path: file:///C:/Users/Sandhya%20Siva%20kumar/PycharmProjects/Fall%202025/AML-3303/MLOps/mlruns/0/models/m-982033fa993f49dd90be63fdff5e6874/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.10.9
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.6.1
+mlflow_version: 3.5.0
+model_id: m-982033fa993f49dd90be63fdff5e6874
+model_size_bytes: 83992
+model_uuid: m-982033fa993f49dd90be63fdff5e6874
+prompts: null
+run_id: 3250bdec521f4f17b08579e88ff099d4
+utc_time_created: '2025-10-18 01:05:25.145852'

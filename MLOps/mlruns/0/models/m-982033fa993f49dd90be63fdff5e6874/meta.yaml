@@ -1,0 +1,10 @@
+artifact_location: file:///C:/Users/Sandhya%20Siva%20kumar/PycharmProjects/Fall%202025/AML-3303/MLOps/mlruns/0/models/m-982033fa993f49dd90be63fdff5e6874/artifacts
+creation_timestamp: 1760749525131
+experiment_id: '0'
+last_updated_timestamp: 1760749529546
+model_id: m-982033fa993f49dd90be63fdff5e6874
+model_type: null
+name: model
+source_run_id: 3250bdec521f4f17b08579e88ff099d4
+status: 2
+status_message: null
