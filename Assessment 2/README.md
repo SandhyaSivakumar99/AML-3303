@@ -117,9 +117,6 @@ Performance was evaluated using industry-standard regression metrics:
 
 All metrics, parameters, preprocessing details, and model artifacts were logged automatically using **MLflow autologging**, enabling seamless comparison across all models.
 
-**Model Training & Results**  
-![initial_model_perf.png](results%2Finitial_model_perf.png)
-
 ---
 
 ## Step 4: Experiment Tracking with MLflow
@@ -150,6 +147,7 @@ MLflow’s experiment UI also allowed visual comparison of metrics across models
 ## Step 5: Best Model Selection
 
 After comparing all five regression models using MAE, RMSE, and R², the **Random Forest Regressor** emerged as the clear top performer.
+![model_performance_summary.png](results%2Fmodel_performance_summary.png)
 
 ### Best Performing Model: Random Forest Regressor
 
